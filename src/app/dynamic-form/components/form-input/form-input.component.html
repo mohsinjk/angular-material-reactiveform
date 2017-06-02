@@ -1,0 +1,6 @@
+<div [formGroup]="group">
+    <h3>{{ config.label }}</h3>
+    <md-input-container class="textbox-width">
+        <input mdInput placeholder="{{config.placeholder}}" [formControlName]="config.name">
+    </md-input-container>
+</div>

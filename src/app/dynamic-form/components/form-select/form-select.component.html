@@ -1,0 +1,8 @@
+<div [formGroup]="group">
+    <h3>{{ config.label }}</h3>
+    <md-select placeholder="{{config.placeholder}}" [formControlName]="config.name">
+        <md-option *ngFor="let option of config.options" [value]="option">
+            {{ option }}
+        </md-option>
+    </md-select>
+</div>
